@@ -1,7 +1,7 @@
 {
-	"UseFrontend": false,
+	"UseFrontend": true,
 	"UseMatchmaker": false,
-	"UseHTTPS": false,
+	"UseHTTPS": true,
 	"UseAuthentication": false,
 	"LogToFile": true,
 	"HomepageFile": "player.htm",
