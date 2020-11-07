@@ -66,10 +66,10 @@ const helmet = require('helmet');
 var hsts = require('hsts');
 var net = require('net');
 
-var FRONTEND_WEBSERVER = 'https://localhost';
+var FRONTEND_WEBSERVER = 'https://thundering-tricolor-speedboat.glitch.me';
 if (config.UseFrontend) {
 	var httpPort = 3000;
-	var httpsPort = 8000;
+	var httpsPort = 3000;
 
 	//Required for self signed certs otherwise just get an error back when sending request to frontend see https://stackoverflow.com/a/35633993
 	process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
@@ -81,7 +81,7 @@ if (config.UseFrontend) {
 	var httpsPort = 443;
 }
 
-var streamerPort = 8888; // port to listen to Streamer connections
+var streamerPort = 3000; // port to listen to Streamer connections
 
 var matchmakerAddress = '127.0.0.1';
 var matchmakerPort = 9999;
